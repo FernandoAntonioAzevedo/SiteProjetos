@@ -37,6 +37,22 @@ nav {
     padding-top: 25px;
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;   
+    width: 100%;
+
+    
+}
+
+.navigation ul {
+    display:  flex;
+    align-items: center;
+    gap: 5rem;
+}
+
 
 .portfolio {
     color: #ffffff;
@@ -216,7 +232,7 @@ footer {
 
 footer h5 {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 footer p {
