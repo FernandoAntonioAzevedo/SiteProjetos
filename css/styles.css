@@ -34,7 +34,8 @@ body {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 25px;    
+    padding-top: 25px;
+ 
 }
 
 .menu {
@@ -47,10 +48,7 @@ body {
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background: #00f93e
-    margin: 5px auto;
-    transition: all 0.3s;
-    gap: 3px;
+    background: #00f93e;     
 }
 
 .menu .bar:nth-child(1),
@@ -65,11 +63,7 @@ body {
     justify-content: space-between;
     padding: 18px 40px;
     padding: 18px 40px;   
-    width: 100%;
-    position: fixed;
-    
-
-    
+    width: 100%;    
 }
 
 .navigation ul {
