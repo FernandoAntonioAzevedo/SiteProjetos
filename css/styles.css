@@ -21,28 +21,53 @@ body {
 
 .caixa-principal {
     height: 100vh;
-    width: 100vw;
+    width: auto;
     background-image: url(/img/background.png);
     background-size: cover;
     background-position: center;
     background-color: #413f3f;
+    grid-column: auto;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+.nav-menu {
+    display: flex;    
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 25px;
+    padding-top: 25px;    
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #00f93e
+    margin: 5px auto;
+    transition: all 0.3s;
+    gap: 3px;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(2),
+.menu .bar:nth-child(3) {
+    background: #00f93e;
 }
 
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 18px 40px;
     padding: 18px 40px;   
     width: 100%;
+    position: fixed;
+    
 
     
 }
@@ -51,6 +76,7 @@ nav {
     display:  flex;
     align-items: center;
     gap: 5rem;
+    grid-column: auto;
 }
 
 
@@ -125,11 +151,13 @@ section img {
     border-radius: 100%;
     border: 4px solid #00f93e;
     margin-right: 30px;
+    
 }
 
 section div h2 {
     color: white;
     font-size: 70px;
+    margin-top: 30px;
 }
 
 section div p {
@@ -268,3 +296,40 @@ footer p {
     transition: 0.5s;
 }
 
+
+/* Mobile */
+
+@media (max-width: 785px) {
+    .navigation {
+        padding: 18px 20px;
+    }
+    .menu {
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo {
+        right: 0;
+    } 
+    .nav-item {
+        margin: 16px 0;
+    }
