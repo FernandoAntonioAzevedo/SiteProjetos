@@ -293,7 +293,7 @@ footer p {
 
 /* Mobile */
 
-@media (max-width: 785px) {
+@media (max-width: 414px) {
     .navigation {
         padding: 18px 20px;
     }
@@ -318,7 +318,7 @@ footer p {
         height: 100%;
         flex-direction: column;
         background: var(--white);
-        gap: -10px;
+        gap: 7px;
         transition: 0.3s;
     }
     .nav-menu.ativo {
@@ -327,3 +327,4 @@ footer p {
     .nav-item {
         margin: 16px 0;
     }
+}
