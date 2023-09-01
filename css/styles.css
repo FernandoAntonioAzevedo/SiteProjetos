@@ -19,7 +19,7 @@ body {
         
 }
 
-.caixa-principal {
+.container {
     height: 100vh;
     width: auto;
     background-image: url(/img/background.png);
@@ -57,7 +57,7 @@ body {
     background: #00f93e;
 }
 
-.navigation {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,7 +66,7 @@ body {
     width: 100%;    
 }
 
-.navigation ul {
+.navbar ul {
     display:  flex;
     align-items: center;
     gap: 5rem;
@@ -294,7 +294,7 @@ footer p {
 /* Mobile */
 
 @media (max-width: 414px) {
-    .navigation {
+    .navbar {
         padding: 18px 20px;
     }
     .menu {
