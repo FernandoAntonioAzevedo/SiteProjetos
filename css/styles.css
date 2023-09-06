@@ -298,7 +298,7 @@ footer p {
         padding: 18px 20px;
     }
     .menu {
-        display: block;
+        display: none;
     }
     .menu.ativo .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
